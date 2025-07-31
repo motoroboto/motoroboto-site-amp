@@ -1,0 +1,177 @@
+.navbar {
+  height: 3.75em;
+  width: 90vw;
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  align-items: center;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15),
+    0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  background-color: #fff;
+  position: sticky;
+  z-index: 2;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 1rem;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar .logo {
+  float: left;
+  padding-top: 0.8em;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 16pt;
+  margin: 0 0 0 2rem;
+}
+
+.navbar .logo a {
+  color: #090909;
+  text-decoration: none;
+}
+
+.navLinks {
+  /* justify-content: right; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding-left: 0;
+  margin-bottom: 0;
+  float: right;
+  padding-top: 1.25em;
+
+  /* position: relative; */
+  /* text-align: right; */
+}
+
+.navLinks a {
+  padding: 0.25em 1em 0.25em 1em;
+  color: #090909;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.navLinks a:hover {
+  color: #a7927f;
+  transition-duration: 0.3s;
+  scroll-behavior: smooth;
+  color: rgb(213, 123, 4);
+}
+
+.navLinks a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.navLinks ul {
+  font-family: "Roboto";
+  justify-content: right;
+  list-style: none;
+  margin: 0 0 0 2rem;
+  /* padding: 0; */
+  /* margin-left: 4em; */
+  /* display: inline-block; */
+}
+
+.navLinks ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navLinks ul li a {
+  color: #090909;
+  /* text-decoration: none; */
+  font-weight: 400;
+}
+
+@media screen and (max-width: 750px) {
+  .navLinks a {
+    display: none;
+  }
+  .dropdown a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navLinks.shrinkLinks {
+    position: relative;
+  }
+  .navLinks.shrinkLinks .icon {
+    position: left;
+    right: 0;
+    top: 0;
+  }
+  .navLinks.shrinkLinks a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* The dropdown container */
+.dropdown {
+  /* float: left; */
+  overflow: hidden;
+}
+
+.dropdown .icon {
+  display: none;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  padding-top: 1.75em;
+  outline: none;
+  color: rgb(0, 0, 0);
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  /* margin: 0 0 0 5rem; */
+  font-family: inherit; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  top: 100%;
+  width: 15vw;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 20px;
+  /* margin-right: 20%; */
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  padding-right: 5px;
+  width: fit-content;
+  background-color: #ffffff;
+  border-radius: 33%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

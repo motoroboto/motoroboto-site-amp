@@ -1,0 +1,55 @@
+.signup-section {
+  padding: 10rem 1rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 50%,
+      #000000 100%
+    ),
+    url("../assets/img/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  border-radius: 2rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.signup-col {
+  position: relative;
+  width: 40vw;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  flex: 0 0 83.3333333333%;
+  max-width: 50vw;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-control-email {
+  flex: 1 1 auto !important;
+  margin-right: 0 !important;
+  margin-right: 0.5rem !important;
+  margin-bottom: 1rem !important;
+  margin-bottom: 0rem !important;
+}
